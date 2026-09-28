@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">TVDrop</string>
+    <string name="scan_qr_hint">Press OK to enlarge the QR code, or enter the address on your phone.</string>
+    <string name="btn_install_apk">Install APK</string>
+    <string name="btn_delete_file">Delete</string>
+    <string name="btn_open_file">Open</string>
+    <string name="no_transfers_yet">No files yet.\nScan the QR code to send your first file.</string>
+    <string name="grant_permission">Downloads access</string>
+    <string name="instant_transfer">Send instantly.</string>
+    <string name="pair_phone">PAIR YOUR PHONE</string>
+    <string name="expand_qr">Enlarge QR code</string>
+    <string name="qr_code">QR code</string>
+    <string name="received_files">Received files</string>
+    <string name="language_title">Language</string>
+    <string name="language_auto_short">AUTO</string>
+    <string name="language_automatic">Automatic (TV language)</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="server_starting">Starting server…</string>
+    <string name="qr_preparing">Preparing QR code</string>
+    <string name="large_qr_code">Large QR code</string>
+    <string name="server_unavailable">Server unavailable</string>
+    <string name="server_unavailable_hint">Restart the app or check port 8080.</string>
+    <string name="qr_failed_hint">Could not create the QR code. Enter the address on your phone.</string>
+    <string name="no_network">No network connection</string>
+    <string name="no_network_hint">Connect your TV to Wi-Fi or Ethernet.</string>
+    <string name="delete_title">Delete file</string>
+    <string name="delete_confirm">Delete “%1$s” (%2$s)?</string>
+    <string name="file_deleted">File deleted</string>
+    <string name="file_delete_failed">Could not delete file</string>
+    <string name="apk_not_found">APK file not found</string>
+    <string name="install_permission_prompt">Allow installation from this source</string>
+    <string name="permission_screen_failed">Could not open permission screen: %1$s</string>
+    <string name="transferring_file">Transferring: %1$s</string>
+    <string name="saving_to_tv">Saving to TV: %1$d%%</string>
+    <string name="file_received">%1$s received</string>
+    <string name="transfer_error">Error: %1$s</string>
+    <string name="transfer_failed">Transfer failed</string>
+    <string name="apk_received_title">APK received</string>
+    <string name="apk_received_prompt">“%1$s” was sent to your TV. Install it now?</string>
+    <string name="install_now">Install now</string>
+    <string name="later">Later</string>
+    <string name="storage_downloads">Downloads / TVDrop</string>
+    <string name="storage_app">App storage</string>
+    <string name="storage_other">Other location</string>
+    <string name="install_failed">Could not start installation: %1$s</string>
+    <string name="open_failed">Could not open file: %1$s</string>
+    <string name="unknown_version">Unknown version</string>
+    <string name="notification_server_active">TVDrop server active</string>
+    <string name="notification_channel_description">File and APK transfer service for TV</string>
+    <string name="notification_complete">Completed: %1$s</string>
+    <plurals name="file_count"><item quantity="one">%d file</item><item quantity="other">%d files</item></plurals>
+</resources>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tv_stage"
+    android:orientation="horizontal"
+    android:paddingStart="28dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="28dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:id="@+id/connectionColumn"
+        android:layout_width="390dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12"
+                android:text="@string/app_name"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:minWidth="56dp"
+                android:background="@drawable/btn_tv_selector"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                android:contentDescription="@string/language_title"
+                android:focusable="true"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_tv_text"
+                android:textSize="11sp"
+                tools:text="EN" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/instant_transfer"
+            android:textColor="@color/text_primary"
+            android:textSize="29sp" />
+
+        <LinearLayout
+            android:id="@+id/connectionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_tv_selector"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12"
+                android:text="@string/pair_phone"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp" />
+
+            <FrameLayout
+                android:id="@+id/qrFrame"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/qr_focus_surface"
+                android:clickable="true"
+                android:contentDescription="@string/expand_qr"
+                android:focusable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivQrCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/qr_code"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvServerUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:maxLines="3"
+                android:textColor="@color/accent_cyan"
+                android:textSize="10sp"
+                tools:text="http://192.168.1.50:8080/#token=123456" />
+
+            <TextView
+                android:id="@+id/tvScanHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/scan_qr_hint"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStoragePermission"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/btn_tv_selector"
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
+            android:focusable="true"
+            android:text="@string/grant_permission"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_tv_permission_text"
+            android:textSize="11sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/line_subtle" />
+
+    <LinearLayout
+        android:id="@+id/filesColumn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/received_files"
+                android:textColor="@color/text_primary"
+                android:textSize="29sp" />
+
+            <TextView
+                android:id="@+id/tvFileCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_tv_selector"
+                android:paddingStart="12dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/accent_cyan"
+                android:textSize="12sp"
+                tools:text="3 dosya" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/transferAlertCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/card_tv_selector"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvTransferAlertTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/accent_emerald"
+                android:textSize="12sp"
+                tools:text="Aktarılıyor: film.mp4" />
+
+            <ProgressBar
+                android:id="@+id/transferProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="7dp"
+                android:indeterminate="true"
+                android:progressTint="@color/accent_cyan" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/line_subtle" />
+
+        <TextView
+            android:id="@+id/tvEmptyState"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/no_transfers_yet"
+            android:textColor="@color/text_tertiary"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTransfers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="true"
+            tools:listitem="@layout/item_transfer" />
+    </LinearLayout>
+</LinearLayout>
