@@ -173,11 +173,7 @@ class MainActivity : AppCompatActivity(), ServerEventListener {
         binding.btnStoragePermission.setOnClickListener {
             StorageUtils.requestStoragePermission(this)
         }
-        binding.btnLanguage.text = if (AppCompatDelegate.getApplicationLocales().isEmpty) {
-            getString(R.string.language_auto_short)
-        } else {
-            AppCompatDelegate.getApplicationLocales()[0]?.language?.uppercase() ?: "EN"
-        }
+        binding.btnLanguage.setText(R.string.language_title)
         binding.btnLanguage.setOnClickListener { showLanguagePicker() }
     }
 

@@ -20,7 +20,7 @@ Transfers use unencrypted HTTP on the local network; use TVDrop only on networks
 
 Requirements: JDK 17 and Android SDK 34. To build a local test APK, run `./gradlew assembleDebug`. The output is `app/build/outputs/apk/debug/app-debug.apk`.
 
-For a distributable APK, create `release-signing/tvdrop-release.jks` and `release-signing/signing.properties` with `storePassword`, `keyAlias`, and `keyPassword`. Run `./gradlew assembleRelease`. The signing directory is excluded from Git. **Back up the keystore and password securely:** Android updates must use the same signing key. Never publish a debug APK or the signing files. Use version `v1.1.0` for the release tag and attach the signed APK and its SHA-256 checksum.
+For a distributable APK, create `release-signing/tvdrop-release.jks` and `release-signing/signing.properties` with `storePassword`, `keyAlias`, and `keyPassword`. Run `./gradlew assembleRelease`. The signing directory is excluded from Git. **Back up the keystore and password securely:** Android updates must use the same signing key. Never publish a debug APK or the signing files. Use version `v1.1.1` for the release tag and attach the signed APK and its SHA-256 checksum.
 
 Licensed under [MIT](LICENSE). The Turkish project notes follow below.
 

@@ -11,7 +11,6 @@
     <string name="qr_code">Code QR</string>
     <string name="received_files">Fichiers reçus</string>
     <string name="language_title">Langue</string>
-    <string name="language_auto_short">AUTO</string>
     <string name="language_automatic">Automatique (langue de la TV)</string>
     <string name="btn_cancel">Annuler</string>
     <string name="server_starting">Démarrage du serveur…</string>

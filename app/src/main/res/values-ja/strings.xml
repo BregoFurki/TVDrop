@@ -11,7 +11,6 @@
     <string name="qr_code">QRコード</string>
     <string name="received_files">受信したファイル</string>
     <string name="language_title">言語</string>
-    <string name="language_auto_short">自動</string>
     <string name="language_automatic">自動（テレビの言語）</string>
     <string name="btn_cancel">キャンセル</string>
     <string name="server_starting">サーバーを起動中…</string>

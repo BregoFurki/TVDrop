@@ -11,7 +11,6 @@
     <string name="qr_code">Kode QR</string>
     <string name="received_files">File diterima</string>
     <string name="language_title">Bahasa</string>
-    <string name="language_auto_short">OTOMATIS</string>
     <string name="language_automatic">Otomatis (bahasa TV)</string>
     <string name="btn_cancel">Batal</string>
     <string name="server_starting">Memulai server…</string>

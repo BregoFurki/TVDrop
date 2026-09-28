@@ -117,7 +117,7 @@ class TVHttpServer(
         val json = JsonObject().apply {
             addProperty("status", "running")
             addProperty("app", "TVDrop")
-            addProperty("version", "1.1.0")
+            addProperty("version", "1.1.1")
         }
         return newFixedLengthResponse(Response.Status.OK, "application/json", json.toString())
     }
